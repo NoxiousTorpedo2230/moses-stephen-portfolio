@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./Skills.css"; // We'll create this custom CSS file
+import "./Skills.css"; // We'll keep some custom styles
 
 const Skills = () => {
   const [activeTab, setActiveTab] = useState("all");
@@ -34,7 +34,6 @@ const Skills = () => {
     { name: "UI/UX Design", value: 75 },
     { name: "Responsive Design", value: 90 },
     { name: "Color Theory", value: 60 },
-
   ];
 
   useEffect(() => {
@@ -73,38 +72,43 @@ const Skills = () => {
           </p>
         </div>
 
-        <div className="skills-tabs">
-        <button 
-          className={`tab-button ${activeTab === 'all' ? 'active' : ''}`} 
-          onClick={() => handleTabClick('all')}
-        >
-          All Skills
-        </button>
-        <button 
-          className={`tab-button ${activeTab === 'frontend' ? 'active' : ''}`} 
-          onClick={() => handleTabClick('frontend')}
-        >
-          Frontend
-        </button>
-        <button 
-          className={`tab-button ${activeTab === 'backend' ? 'active' : ''}`} 
-          onClick={() => handleTabClick('backend')}
-        >
-          Backend
-        </button>
-        <button 
-          className={`tab-button ${activeTab === 'tools' ? 'active' : ''}`} 
-          onClick={() => handleTabClick('tools')}
-        >
-          Tools
-        </button>
-        <button 
-          className={`tab-button ${activeTab === 'design' ? 'active' : ''}`} 
-          onClick={() => handleTabClick('design')}
-        >
-          Design
-        </button>
-      </div>
+        {/* Fixed tabs with Bootstrap */}
+        <div className="row justify-content-center mb-4">
+          <div className="col-12">
+            <div className="d-flex flex-wrap justify-content-center">
+              <button 
+                className={`tab-button m-1 ${activeTab === 'all' ? 'active' : ''}`} 
+                onClick={() => handleTabClick('all')}
+              >
+                All Skills
+              </button>
+              <button 
+                className={`tab-button m-1 ${activeTab === 'frontend' ? 'active' : ''}`} 
+                onClick={() => handleTabClick('frontend')}
+              >
+                Frontend
+              </button>
+              <button 
+                className={`tab-button m-1 ${activeTab === 'backend' ? 'active' : ''}`} 
+                onClick={() => handleTabClick('backend')}
+              >
+                Backend
+              </button>
+              <button 
+                className={`tab-button m-1 ${activeTab === 'tools' ? 'active' : ''}`} 
+                onClick={() => handleTabClick('tools')}
+              >
+                Tools
+              </button>
+              <button 
+                className={`tab-button m-1 ${activeTab === 'design' ? 'active' : ''}`} 
+                onClick={() => handleTabClick('design')}
+              >
+                Design
+              </button>
+            </div>
+          </div>
+        </div>
 
         <div className="row skills-display">
           {getSkills().map((skill, index) => (
@@ -133,25 +137,25 @@ const Skills = () => {
 
         <div className="skills-summary mt-5">
           <div className="row">
-            <div className="col-lg-3 col-md-6 col-sm-12 mb-5">
+            <div className="col-lg-3 col-md-6 col-sm-6 mb-4">
               <div className="summary-card">
                 <div className="summary-number">90%</div>
                 <div className="summary-title">Frontend</div>
               </div>
             </div>
-            <div className="col-lg-3 col-md-6 col-sm-12 mb-5">
+            <div className="col-lg-3 col-md-6 col-sm-6 mb-4">
               <div className="summary-card">
                 <div className="summary-number">80%</div>
                 <div className="summary-title">Backend</div>
               </div>
             </div>
-            <div className="col-lg-3 col-md-6 col-sm-12 mb-5">
+            <div className="col-lg-3 col-md-6 col-sm-6 mb-4">
               <div className="summary-card">
                 <div className="summary-number">85%</div>
                 <div className="summary-title">Tools</div>
               </div>
             </div>
-            <div className="col-lg-3 col-md-6 col-sm-12 mb-5">
+            <div className="col-lg-3 col-md-6 col-sm-6 mb-4">
               <div className="summary-card">
                 <div className="summary-number">80%</div>
                 <div className="summary-title">Design</div>
