@@ -35,13 +35,13 @@ export const projects = [
       github: "https://github.com/NoxiousTorpedo2230/moses-stephen-portfolio.git",
       featured: true
     },
-    // {
-    //   id: 4,
-    //   title: "iParadize Web-App",
-    //   description: "Its a Web App, Which Consist of Apple Products with discounts. It has the functionality of (adding, removing, Buying) the products. It is completed, but i am not able to host it. You can check it out in Git.",
-    //   technologies: ["React", "Express.js", "MongoDB", "Node.js", "CSS", "Bootstrap", "JavaScript" ],
-    //   image: iParadize,
-    //   category: "personal",
-    //   github: "https://github.com/NoxiousTorpedo2230/iParadize-Web-App"
-    // },
+    {
+      id: 4,
+      title: "iParadize Web-App",
+      description: "Its a Web App, Which Consist of Apple Products with discounts. It has the functionality of (adding, removing, Buying) the products. It is completed, but i am not able to host it. You can check it out in Git.",
+      technologies: ["React", "Express.js", "MongoDB", "Node.js", "CSS", "Bootstrap", "JavaScript" ],
+      image: iParadize,
+      category: "personal",
+      github: "https://github.com/NoxiousTorpedo2230/iParadize-Web-App"
+    },
   ];
