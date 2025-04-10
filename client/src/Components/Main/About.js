@@ -117,7 +117,7 @@ const About = ({ handleScroll} ) => {
                     <span style={{color:'whitesmoke'}}>Let's Talk</span>
                     <FaChevronRight style={{color:'whitesmoke'}}  className="button-icon" />
                   </Button>
-                  <Button as="a" href="/Moses Stephen.pdf" download="Moses_Stephen_Web_Developer.pdf" className="secondary-button">
+                  <Button as="a" href="/MOSES STEPHEN WEB_DEVELOPER.pdf" download="Moses_Stephen_Web_Developer.pdf" className="secondary-button">
                     <span>Download CV</span>
                   </Button>
                 </motion.div>
